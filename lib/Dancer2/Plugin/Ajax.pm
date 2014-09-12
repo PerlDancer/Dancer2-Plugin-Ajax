@@ -78,8 +78,8 @@ Here is example to use JSON:
 sub is_ajax {
     my ($request) = @_;
 
-    if (defined $request->header('X-Requested-With')
-            and $request->header('X-Requested-With') eq 'XmlHttpRequest') {
+    if (defined $request->header('x-requested-with')
+            and $request->header('x-requested-with') eq 'XMLHttpRequest') {
         return 1;
     }
     return 0;
