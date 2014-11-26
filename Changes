@@ -1,5 +1,5 @@
 Revision history for Dancer2-Plugin-Ajax
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+{{$NEXT}}
 
+    * Now in separate distribution, away from core. :)
