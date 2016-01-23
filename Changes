@@ -2,6 +2,9 @@ Revision history for Dancer2-Plugin-Ajax
 
 {{$NEXT}}
 
+    * Stop using deprecated "request" method.
+      (Peter Mottram)
+
 0.200000  2014-11-27 00:11:38+01:00 Europe/Amsterdam
 
     * Now in separate distribution, away from core. :)
