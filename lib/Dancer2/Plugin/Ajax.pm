@@ -25,7 +25,7 @@ register 'ajax' => sub {
     my $ajax_route = sub {
 
         # # must be an XMLHttpRequest
-        if ( not $dsl->request->is_ajax ) {
+        if ( not $dsl->app->request->is_ajax ) {
             $dsl->pass and return 0;
         }
 
