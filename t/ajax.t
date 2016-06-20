@@ -23,7 +23,7 @@ use HTTP::Request::Common qw<GET POST DELETE PUT>;
         "{more: 'json'}";
     };
 
-    ajax ['put', 'del', 'get'] => "/more/test" => sub {
+    ajax ['put', 'delete', 'get'] => "/more/test" => sub {
         "{some: 'json'}";
     };
 }
