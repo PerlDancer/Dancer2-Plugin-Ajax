@@ -2,6 +2,8 @@ Revision history for Dancer2-Plugin-Ajax
 
 {{$NEXT}}
 
+0.300000  2016-10-28 10:38:01-05:00 America/Chicago
+
     * Update to Dancer2::Plugin2 architecture. (Peter Mottram)
 
 0.200001  2016-01-23 18:22:59+01:00 Europe/Amsterdam
