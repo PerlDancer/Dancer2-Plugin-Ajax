@@ -32,7 +32,7 @@ sub ajax {
 
         # # must be an XMLHttpRequest
         if ( not $plugin->app->request->is_ajax ) {
-            $plugin->app->pass and return 0;
+            $plugin->app->pass;
         }
 
         # Default response content type is either what's defined in the
