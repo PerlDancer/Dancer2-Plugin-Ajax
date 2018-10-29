@@ -43,7 +43,7 @@ sub ajax {
         # disable layout
         my $layout = $plugin->app->config->{'layout'};
         $plugin->app->config->{'layout'} = undef;
-        my $response = $code->();
+        my $response = $code->(@_);
         $plugin->app->config->{'layout'} = $layout;
         return $response;
     };
