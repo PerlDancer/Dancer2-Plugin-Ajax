@@ -28,7 +28,7 @@ use HTTP::Request::Common qw<GET POST DELETE PUT>;
     };
 
     ajax '/subargs' => sub {
-        return $_[0]->request->to_string;
+        return $_[0]->app->request->to_string;
     };
 }
 
@@ -105,7 +105,7 @@ like(
     $test->request( GET '/subargs', 'X-Requested-With' => 'XMLHttpRequest' )
          ->content,
     qr{/subargs},
-    'ajax routes have access to $self',
+    'GH #7: ajax routes have access to $self',
 );
 
 done_testing;
